@@ -9,6 +9,18 @@ const collectEmployees = function () {
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
+  const employees = [];
+
+  const numEmployees = prompt("Enter the number of employees:");
+
+  for (let i = 0; i < numEmployees; i++) {
+    const firstName = prompt(`Enter the first name of employee ${i + 1}:`);
+    const lastName = prompt(`Enter the last name of employee ${i + 1}:`);
+    const salary = parseFloat(prompt(`Enter the salary of employee ${i + 1}:`));
+
+    employees.unshift({ firstName, lastName, salary });
+  }
+  return employees;
 };
 
 // Select a random employee
