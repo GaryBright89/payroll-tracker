@@ -24,7 +24,6 @@ addEmployeesBtn.addEventListener("click", function () {
 };
 
 // Display the average salary
-  // TODO: Calculate and display the average salary
 const displayAverageSalary = function (employeesArray) {
   const totalSalary = employeesArray.reduce(
     (sum, employee) => sum + employee.salary,
@@ -35,7 +34,8 @@ const displayAverageSalary = function (employeesArray) {
 };
 
 // Select a random employee
-  // TODO: Select and display a random employee
+
+// TODO: Select and display a random employee
 const getRandomEmployee = function (employeesArray) {
   const randomIndex = Math.floor(Math.random() * employeesArray.length);
   const randomEmployee = employeesArray[randomIndex];
